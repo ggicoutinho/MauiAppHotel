@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Gray200}">
+
+    <VerticalStackLayout Padding="30" Spacing="20"
+                         VerticalOptions="Center">
+
+        <Label Text="Sobre o Aplicativo"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="{StaticResource MidnightBlue}"
+               HorizontalOptions="Center"/>
+
+        <Frame BackgroundColor="White"
+               CornerRadius="15"
+               Padding="20"
+               HasShadow="True">
+
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Desenvolvido por: Giovanna"
+                       FontSize="18"
+                       TextColor="Black" />
+                <Label Text="Ano de desenvolvimento: 2025"
+                       FontSize="18"
+                       TextColor="Black" />
+                <Label Text="Aplicativo criado como parte do curso de Desenvolvimento de Sistemas."
+                       FontSize="16"
+                       TextColor="Gray"
+                       LineBreakMode="WordWrap" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                BackgroundColor="MidnightBlue"
+                TextColor="White"
+                CornerRadius="25"
+                HeightRequest="50"
+                Clicked="OnVoltarClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
